@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d9f5cf"
+            >
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+
+                android:id="@+id/circularmessige_item"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/circularmessige_item"
+                android:fontFamily="casual"
+                android:text="Azat"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/button_vseti"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/userstatus"
+                android:layout_marginStart="80dp"
+                android:backgroundTint="@color/cardview_shadow_end_color"
+                app:srcCompat="@drawable/ic_fiber_vseti" />
+
+            <TextView
+                android:id="@+id/userstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/circularmessige_item"
+                android:fontFamily="casual"
+                android:text="v seti"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

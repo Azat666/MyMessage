@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#b1d4aa"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image123"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_email_item" />
+    <TextView
+        android:id="@+id/qaxaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#235ac2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Q.Vanadzor"
+        android:layout_below="@id/image123" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2662d4"
+        android:text="Amusnacac e"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/image123" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2c67d4"
+        android:text="26 Tarekan"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image123" />
+</RelativeLayout>

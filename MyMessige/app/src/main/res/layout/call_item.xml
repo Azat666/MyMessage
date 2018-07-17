@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#bde7c0"
+            android:layout_height="wrap_content">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/circular_item"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/circular_item"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:text="Aren"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/textsurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gevorgyan"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/circular_item"
+                android:layout_below="@id/text_name"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_call_item"
+                android:backgroundTint="@color/cardview_shadow_end_color"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="50dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
